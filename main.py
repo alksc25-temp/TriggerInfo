@@ -105,7 +105,7 @@ def process_ipos(ipos):
             print(f"-- IPO in alert window: {name}, End={end}, GMP={gmp}")
 
             try:
-                if float(gmp) >= 30:   # ✅ Your rule
+                if float(gmp) >= 5:   # ✅ Your rule
                     print(f"-- GMP PASSED for {name}, GMP={gmp}")
 
                     day_text = "Closing Today" if today == end else "Closing Tomorrow"
