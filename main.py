@@ -131,7 +131,7 @@ def update_excel(ipos):
 
             # 🔹 VALIDATION RULE: If GMP > 30 → PROCEED
             try:
-                if float(gmp) > 30:
+                if float(gmp) > 10:
                     print(f"-- GMP validation passed for {name}, GMP={gmp}")
 
                     df.loc[df["IPO Name"] == name, "Status"] = "Proceed"
