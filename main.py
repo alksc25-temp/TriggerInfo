@@ -37,7 +37,7 @@ def get_ipos():
 
     for row in rows[1:]:  # skip header
         cols = row.find_elements(By.TAG_NAME, "td")
-        if len(cols) > 8:
+        if len(cols) > 30:
             name = cols[0].text.strip()
             gmp_text = cols[1].text.strip()
             sub = cols[3].text.strip()
